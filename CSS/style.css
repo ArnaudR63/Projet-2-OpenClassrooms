@@ -35,12 +35,14 @@ body {
     color: #F2F2F2
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 22px;
     font-weight: 700;
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: 18px;
     font-weight: 700;
 }
@@ -90,17 +92,19 @@ a {
     margin-left: 50%;
 }
 
-#menu-hebergements, #menu-activities {
+#menu-hebergements,
+#menu-activities {
     margin: 0px 0px 0px 0px;
     padding-top: 46px;
     width: 162px;
     text-align: center;
 }
 
-    #menu-hebergements:hover, #menu-activities:hover {
-        border-top: 2px solid #0065FC;
-        color: #0065FC;
-    }
+#menu-hebergements:hover,
+#menu-activities:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
 
 .filter {
     background: white;
@@ -110,9 +114,9 @@ a {
     padding: 14px 20px 14px 20px;
 }
 
-    .filter:hover {
-        background-color: #DEEBFF;
-    }
+.filter:hover {
+    background-color: #DEEBFF;
+}
 
 #filter-bar {
     width: 914px;
@@ -129,9 +133,9 @@ a {
     width: 860px;
 }
 
-    #filter-buttons > li {
-        margin-right: 43px;
-    }
+#filter-buttons>li {
+    margin-right: 43px;
+}
 
 #search-mobile {
     display: none;
@@ -193,9 +197,9 @@ a {
     width: 30%;
 }
 
-    .footer-column > ul {
-        padding-left: 0px;
-    }
+.footer-column>ul {
+    padding-left: 0px;
+}
 
 /*Properties Marseille*/
 #info {
@@ -216,7 +220,7 @@ a {
 
 #logements-number {
     display: flex;
-    width:100vw;
+    width: 100vw;
 }
 
 #marseille-cards {
@@ -248,7 +252,9 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
 }
 
-a.property:nth-child(1), a.property:nth-child(2), a.property:nth-child(3) {
+a.property:nth-child(1),
+a.property:nth-child(2),
+a.property:nth-child(3) {
     height: 75%;
     margin-bottom: 30px;
 }
@@ -267,7 +273,7 @@ a.property:nth-child(1), a.property:nth-child(2), a.property:nth-child(3) {
     object-fit: cover;
 }
 
-.property-text > h3 {
+.property-text>h3 {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -309,7 +315,7 @@ a.property:nth-child(1), a.property:nth-child(2), a.property:nth-child(3) {
     border-bottom-left-radius: 20px;
 }
 
-.property-text > p {
+.property-text>p {
     margin-top: -5%;
     margin-bottom: 3%;
 }
@@ -355,7 +361,7 @@ a.property:nth-child(1), a.property:nth-child(2), a.property:nth-child(3) {
     line-height: 25.83px;
 }
 
-.cards-marseille-2 > h3 {
+.cards-marseille-2>h3 {
     margin-top: 20px;
     text-align: left;
     margin-left: 19px;
@@ -387,10 +393,10 @@ a.property:nth-child(1), a.property:nth-child(2), a.property:nth-child(3) {
         width: 252px;
     }
 
-        .populaires > h3 {
-            font-size: 14px;
-            line-height: 16.44px;
-        }
+    .populaires>h3 {
+        font-size: 14px;
+        line-height: 16.44px;
+    }
 
     .stars {
         position: fixed;
@@ -412,7 +418,7 @@ a.property:nth-child(1), a.property:nth-child(2), a.property:nth-child(3) {
 }
 
 @media screen and (max-width:1200px) {
-    .property-text-pop > p {
+    .property-text-pop>p {
         margin-top: -15%;
     }
 }
