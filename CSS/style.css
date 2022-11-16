@@ -44,6 +44,7 @@ h2 {
 h3,
 .h3 {
     font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -101,7 +102,8 @@ a {
     text-align: center;
 }
 
-#menu>li:hover {
+#menu-hebergements:hover,
+#menu-activities:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
@@ -135,6 +137,7 @@ a {
 
 #filter-buttons>li {
     margin-right: 4%;
+    margin-right: 43px;
 }
 
 #search-mobile {
@@ -227,6 +230,7 @@ a {
 #logements-number {
     display: flex;
     width: 100%;
+    width: 100vw;
 }
 
 #marseille-cards {
@@ -267,6 +271,7 @@ a.property:nth-child(6) {
 a.property:nth-child(1),
 a.property:nth-child(2),
 a.property:nth-child(3) {
+    height: 75%;
     margin-bottom: 30px;
     margin-top: 33px;
 }
@@ -626,5 +631,12 @@ a.property:nth-child(3) {
 
     #plus-populaires {
         padding: 20px
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .property-text-pop>p {
+        margin-top: -15%;
     }
 }
