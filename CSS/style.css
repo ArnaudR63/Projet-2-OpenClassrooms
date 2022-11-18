@@ -97,7 +97,6 @@ a {
     line-height: 19px;
     align-items: baseline;
     margin-left: 40%;
-    width: 100%;
 }
 
 #menu-hebergements,
@@ -500,6 +499,7 @@ a.property:nth-child(3) {
         margin-left: auto;
         margin-right: auto;
         padding: 0;
+        width: 100%;
     }
 
     #menu>li {
@@ -640,5 +640,25 @@ a.property:nth-child(3) {
 
     #plus-populaires {
         padding: 20px
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .property, .populaires{
+        transition: all 0.5s ease-in-out;
+    }
+    .property:hover, .populaires:hover {
+        transform: scale(1.2);
+        z-index: 2;
+    }
+    
+    .marseille-img, .cards-marseille {
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        max-width: 100%;
+    }
+    
+    .marseille-img:hover {
+        transform: scale(1.3);
     }
 }
