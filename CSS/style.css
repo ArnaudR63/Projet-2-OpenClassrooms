@@ -112,6 +112,10 @@ a {
     color: #0065FC;
 }
 
+#menu a {
+    border-top: 2px solid #FFFFFF;
+}
+
 .filter {
     background: white;
     border: 2px solid #D9D9D9;
@@ -286,7 +290,7 @@ a.property:nth-child(3) {
 #load-more {
     position: relative;
     margin-bottom: -5vh;
-    bottom: -5vh;
+    bottom: -10vh;
 }
 
 .property-img {
@@ -397,16 +401,18 @@ a.property:nth-child(3) {
 
 /*Media Queries*/
 
-@media screen and (min-width:768px) and (max-width:991px) {
+@media screen and (max-width:991px) {
 
-    h1 {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    #header {
+        padding-left: 3%;
     }
 
-    #section-filters {
-        width: 90%;
+    main {
+        padding: 3%;
+    }
+
+    h1 {
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -437,6 +443,7 @@ a.property:nth-child(3) {
         font-size: 13px;
         line-height: 15.26px;
         width: 252px;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.1));
     }
 
     .populaires>h3 {
@@ -474,6 +481,11 @@ a.property:nth-child(3) {
 }
 
 @media screen and (max-width: 767px) {
+    
+    main {
+        padding: 0%;
+    }
+    
     #nav {
         flex-direction: column;
     }
@@ -547,7 +559,9 @@ a.property:nth-child(3) {
     }
 
     #logements-number {
-        width: 90%;margin-left: auto;margin-right: auto;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #cards {
@@ -561,8 +575,9 @@ a.property:nth-child(3) {
 
     #plus-populaires {
         border-radius: 0;
-        width: 85%;
+        width: 90%;
         margin-left: 0;
+        padding-left: 4%;
     }
 
     #hebergements {
@@ -631,6 +646,14 @@ a.property:nth-child(3) {
     body {
         overflow-x: hidden;
     }
+
+    #popular-properties {
+        flex-direction: column;
+    }
+
+    .populaires {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:300px) {
@@ -644,20 +667,25 @@ a.property:nth-child(3) {
 }
 
 @media screen and (min-width: 993px) {
-    .property, .populaires{
+
+    .property,
+    .populaires {
         transition: all 0.5s ease-in-out;
     }
-    .property:hover, .populaires:hover {
+
+    .property:hover,
+    .populaires:hover {
         transform: scale(1.2);
         z-index: 2;
     }
-    
-    .marseille-img, .cards-marseille {
+
+    .marseille-img,
+    .cards-marseille {
         overflow: hidden;
         transition: all 0.5s ease-in-out;
         max-width: 100%;
     }
-    
+
     .marseille-img:hover {
         transform: scale(1.3);
     }
