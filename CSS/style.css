@@ -343,6 +343,10 @@ a.property:nth-child(3) {
     object-fit: cover;
 }
 
+.property-text-pop {
+    margin-left: 1vw;
+}
+
 .property-text>p {
     margin-top: -5%;
     margin-bottom: 3%;
@@ -474,10 +478,6 @@ a.property:nth-child(3) {
         width: 40%;
         margin-right: 1vw;
     }
-}
-
-.property-text-pop {
-    margin-left: 1vw;
 }
 
 @media screen and (max-width: 767px) {
